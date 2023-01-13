@@ -14,7 +14,7 @@ function generateHtmlFile(data) {
     if (data[i].getRole() === "Engineer") {
       htmlMarkUp += `<div class="card" style="width: 18rem;">
 <div class="card-header">&#xF4B2; ${data[i].getRole()}</div>
-<ul class="list-group list-group-flush">
+<ul class="list-group list-group-flush align-items-center">
   <li class="list-group-item">${data[i].getName()}</li>
   <li class="list-group-item">ID: ${data[i].getId()}</li>
   <li class="list-group-item">Email: ${data[i].getEmail()}</li>
@@ -24,7 +24,7 @@ function generateHtmlFile(data) {
     if (data[i].getRole() === "Intern") {
       htmlMarkUp += `<div class="card" style="width: 18rem;">
 <div class="card-header">&#xF6FE; ${data[i].getRole()}</div>
-<ul class="list-group list-group-flush">
+<ul class="list-group list-group-flush align-items-center">
   <li class="list-group-item">${data[i].getName()}</li>
   <li class="list-group-item">ID: ${data[i].getId()}</li>
   <li class="list-group-item">Email: ${data[i].getEmail()}</li>

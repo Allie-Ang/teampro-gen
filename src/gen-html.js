@@ -4,7 +4,7 @@ function generateHtmlFile(data) {
     if (data[i].getRole() === "Manager") {
       htmlMarkUp += `<div class="card" style="width: 18rem;">
 <div class="card-header">&#xF18F; ${data[i].getRole()}</div>
-<ul class="list-group list-group-flush">
+<ul class="list-group list-group-flush align-items-center">
   <li class="list-group-item">${data[i].getName()}</li>
   <li class="list-group-item">ID: ${data[i].getId()}</li>
   <li class="list-group-item">Email: ${data[i].getEmail()}</li>

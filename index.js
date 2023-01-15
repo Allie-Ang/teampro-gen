@@ -10,9 +10,7 @@ const fs = require("fs");
 const path = require("path");
 const generateHtmlFile = require("./src/gen-html");
 
-const mgrArray = [];
-const engArray = [];
-const internArray = [];
+const teamArray = [];
 let htmlFile = "";
 
 // Manager Fx questions
@@ -47,7 +45,7 @@ mgrQuestions = function () {
         response.mgremail,
         response.mgrofficenum
       );
-      mgrArray.push(manager);
+      teamArray.push(manager);
       optionQuestion();
     });
 };
@@ -84,7 +82,7 @@ engQuestions = function () {
         response.engemail,
         response.enggithub
       );
-      engArray.push(engineer);
+      teamArray.push(engineer);
       optionQuestion();
     });
 };
@@ -105,7 +103,7 @@ internQuestions = function () {
       },
       {
         type: "input",
-        name: "engemail",
+        name: "internemail",
         message: "Enter intern email:",
       },
       {
@@ -121,7 +119,8 @@ internQuestions = function () {
         response.internemail,
         response.internschool
       );
-      internArray.push(intern);
+
+      teamArray.push(intern);
       optionQuestion();
     });
 };
@@ -158,10 +157,10 @@ optionQuestion = function () {
     </head>
     <body>
     <header>
-    <h1>My Team</h1>
+    <h1 class="text-center">My Team</h1>
     </header>
-    <div id='all-cards'>
-    ${generateHtmlFile(mgrArray, engArray, internArray)}
+    <div class='all-cards d-flex justify-content-evenly mx-2'>
+    ${generateHtmlFile(teamArray)}
     </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"

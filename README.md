@@ -6,6 +6,9 @@ Testing is key to making code maintainable, so you’ll also write a unit test f
 
 > **Note**: This project uses Inquirer
 
+## Mock Up
+<img width="779" alt="Screenshot 2023-01-14 at 4 47 30 PM" src="https://user-images.githubusercontent.com/112665153/212503537-95b12619-9d52-47f6-ae21-e5b2f5bb3f85.png">
+
 ## User Story
 
 ```md
@@ -34,5 +37,3 @@ WHEN I select the intern option
 THEN I am prompted to enter the intern’s name, ID, email, and school, and I am taken back to the menu
 WHEN I decide to finish building my team
 THEN I exit the application, and the HTML is generated
-
-<img width="779" alt="Screenshot 2023-01-14 at 4 47 30 PM" src="https://user-images.githubusercontent.com/112665153/212503537-95b12619-9d52-47f6-ae21-e5b2f5bb3f85.png">
